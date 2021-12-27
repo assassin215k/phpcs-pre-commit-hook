@@ -77,7 +77,7 @@ function php_cs_check {
             if ($file -match "test\/") {
                 write-host "SKIPPED! (test file)" -foregroundcolor "darkGreen" -backgroundcolor "black"
             } else {
-                $errors = & $php_cs --standard=PSR2 -n --colors --report-width=120 $file
+                $errors = & $php_cs --standard=Symfony -n --colors --report-width=120 $file
 
                 # Outputs the error
                 if ($LastExitCode) {
