@@ -13,6 +13,6 @@ class Installer
             system('sh vendor/assassin215k/phpcs-pre-commit-hook/src/setup.sh');
         }
         
-        echo "Hooks installed"
+        echo "Hooks installed";
     }
 }
